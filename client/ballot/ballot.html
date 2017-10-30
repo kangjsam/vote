@@ -1,0 +1,23 @@
+
+   <template name="ballot">
+      <h1 style ="font-size: 60px">투표 </h1>
+   
+  {{#each tlist}} 
+    <table border=1 cellpadding=0 cellspacing=0 style ="font-size: 50px;margin: 5pt 30pt 5pt 30pt">
+     <tr>
+        <td align="center"><input type="checkbox" value="{{cnt}}"  class="toggle-checked" style="width: 50px;height:50px"></td>
+        <td width=30 align="center">{{num}}</td>
+        <td>{{name}}</td></tr> 
+    </table>
+    <br>
+  {{/each}} 
+  <button class="send" style ="font-size: 30px;margin: 20pt 50pt 20pt 50pt">투표제출</button> <br><br>
+  <div name="BallotAddress" font size=7>
+     <label for="BallotAddr">Account1</label>
+     <input id="BallotAddr" type ="text" value="{{ballotAddr}}" size="60" readonly/><br><br> 
+      <label for="VoteAddr">Account2</label>
+     <input id="VoteAddr" type ="text" value="{{voteAddr}}" size="60" readonly/><br><br> 
+   </div>
+  {{voteresult}} <br>
+  {{txhash}} <br>  
+  </template>   

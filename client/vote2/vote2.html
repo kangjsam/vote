@@ -1,0 +1,25 @@
+<template name="vote2">
+    <h4>투표정보</h4>
+     <div name="GetVoteAll">
+     <label for="VoteAccount">투표Account</label>
+     <input id="VoteAccount" type ="text" value="" size="40" />
+     <button id="getVoteAll">조회</button><br><br> 
+     <label for="VoteNm">선거명</label>
+     <input id="VoteNm" type ="text" value="{{name}}" size="50" readonly/><br><br>
+     <label for="VoteTotCnt">총투표건수</label>
+     <input id="VoteTotCnt" type ="text" value="{{totCnt}}" size="20" readonly/><br><br>
+     <label for="CanCnt">등록후보자 </label>
+     <input id="CanCnt" type ="text" value="{{canCnt}}" size="20" readonly/> <br><br> 
+     <label for="VoterCnt">등록유권자수 </label>
+     <input id="VoterCnt" type ="text" value="{{regCnt}}" size="20" readonly/> <br><br>   
+     </div>
+     <div name="SetVoteStatus">
+     <h4>투표진행상태관리</h4>
+     <label for="VoteFlag">투표진행상태</label>
+     <input id="VoteFlag" type ="text" value="{{voteFlag}}" size="20" readonly/>
+     <button id="getVoteFlag">조회</button>
+     <button id="setVoteStart">투표개시</button>
+     <button id="setVoteEnd">투표종료</button><br><br>
+     {{txhash}}
+     </div>
+ </template>   

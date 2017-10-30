@@ -1,0 +1,41 @@
+<template name="header">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {{#linkTo route="home" class='navbar-brand'}} Home {{/linkTo}}
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+
+          <li class="{{isActiveRoute 'vote1'}}">
+            {{#linkTo route="vote1"}} 투표관리 {{/linkTo}}
+          </li>
+          <li class="{{isActiveRoute 'vote2'}}">
+            {{#linkTo route="vote2"}} 투표정보 {{/linkTo}}
+          </li>
+          <li class="{{isActiveRoute 'vote3'}}">
+            {{#linkTo route="vote3"}} 후보자관리 {{/linkTo}}
+          </li>
+          <li class="{{isActiveRoute 'vote4'}}">
+            {{#linkTo route="vote4"}} 유권자관리 {{/linkTo}}
+          </li>
+          <li class="{{isActiveRoute 'vote5'}}">
+            {{#linkTo route="vote5"}} 투표지조회 {{/linkTo}}
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+</template>

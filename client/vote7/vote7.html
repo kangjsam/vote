@@ -1,0 +1,19 @@
+  <template name="vote7">
+    <!--<div name="GetBallot">
+    <button id="getBallot">조회</button><br><br>  
+    <div id ="qr_result"><img id="qrcodeimg"></div>  
+    <a href="/ballot/{{voteAddr}}/{{balAddr}}" >{{balAddr}}</a>
+    {{#if balAddr}}
+    {{> QRCode text=qrcodeUrlText size="128px" }}
+    {{/if}}
+    </div>  -->
+   <h1> 개표결과 </h1><br><br>
+    <table border=1 cellpadding=0 cellspacing=0> 
+  {{#each qrcodeList}} 
+     <tr>
+        <td width=30 align="center">{{num}}</td>
+        <td width=100 align="center">{{qrurl}}</td>
+        <td width=20 align="center">{{canno}} </td></tr> 
+ {{/each}} 
+    </table>
+  </template>   

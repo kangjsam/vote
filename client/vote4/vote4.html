@@ -1,0 +1,16 @@
+  <template name="vote4">
+    <h4>투표지생성</h4>
+    <div name="GetBallot">
+    <label for="getBallot"> 투표지Account</label>
+    <input id="getBallot" type ="text" value="{{balAddr}}" size="60" readonly/>
+    <button id="createBallot">생성</button><br><br>    
+    </div>
+    <h4>투표지정보등록</h4>
+    <div name="SetBallot">
+    <label for="setVote">투표Account</label>
+    <input id="setVote" type ="text" value="" size="60" /><br><br>    
+   <label for="setSerial">시리얼번호</label>
+    <input id="setSerial" type ="number" value={{serialNo}} size="60" /><br><br>    
+    <button id="regBallot">등록</button><br><br>    
+    </div> 
+  </template>   

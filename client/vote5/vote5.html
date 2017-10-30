@@ -1,0 +1,16 @@
+  <template name="vote5">
+    <h4>투표지조회</h4>
+    <div name="GetBallot">
+    <label for="getBalAddr"> 투표지Account</label>
+    <input id="getBalAddr" type ="text" value="" size="60" /><br>
+    <label for="getVoteAddr"> 투표Account</label>
+    <input id="getVoteAddr" type ="text" value="" size="60" /><br>
+    <button id="getBallot">조회</button><br><br>  
+    <!-- <div id ="qr_result"><img id="qrcodeimg"></div> --> 
+    <a href="/ballot/{{voteAddr}}/{{balAddr}}" >{{balAddr}}</a>
+    {{#if balAddr}}
+    {{> QRCode text=qrcodeUrlText size="128px" }}
+    {{/if}}
+    </div>
+    <button id="getallBallot">일괄조회</button><br><br>
+  </template>   

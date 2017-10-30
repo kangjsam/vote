@@ -1,0 +1,16 @@
+<template name="vote1">
+    <h4>투표개설</h4>
+    <div name="GetVote">
+    <label for="getVote">투표Account</label>
+    <input id="getVote" type ="text" value="{{cntrAddr}}" size="60" readonly/>
+    <button id="createvote" >생성</button><br><br>    
+     <p> txhash : {{txHash1}} </p>
+    </div><br><br>
+    <h4>투표정보등록</h4> 
+     <div name="SetVoteNm">
+    <label for="setVoteNm">투표명칭</label>
+    <input id="setVoteNm" type ="text" value="" size="50" />
+    <button id="regvote">등록</button><br><br>    
+    <p> txhash : {{txHash2}} </p>
+    </div>  
+</template>
